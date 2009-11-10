@@ -20,6 +20,10 @@ public class OperacaoModular {
             return resultado ;
         }
 
+        /*
+         * Se a maior que b então
+         * a será o proprio modulo
+         */
         if (valor < modulo){
             resultado = valor ;
         }else{
