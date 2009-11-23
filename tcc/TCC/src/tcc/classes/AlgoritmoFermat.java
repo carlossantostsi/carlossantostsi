@@ -13,13 +13,13 @@ public class AlgoritmoFermat {
 
     public String fermat(Long valor) {
         OperacaoModular operacaoModular = new OperacaoModular();
-        String retorno = "O Numero "+valor+" é Primo.";
+        String retorno = "O Número "+valor+" é Primo.";
         Double temp = 0.0;
         Long x = new Long(0);
         Double y = 0.0;
 
         if(operacaoModular.calularMOD(valor, new Long(2)) == 0){
-            return "O Numero Informado é Par.";
+            return "O Número Informado é Par.";
         }
 
         temp = Math.sqrt(valor);
@@ -34,7 +34,7 @@ public class AlgoritmoFermat {
                 Integer p = (i + y.intValue());
                 Integer q = (i - y.intValue());
 
-                retorno = ("Numero não Primo. Os multiplos de: " + p*q + " ; são: " + p + " e: " +q+" .");
+                retorno = ("Número não Primo. Os múltiplos de: " + p*q + " ; são: " + p + " e: " +q+" .");
             break;
             }
         }
