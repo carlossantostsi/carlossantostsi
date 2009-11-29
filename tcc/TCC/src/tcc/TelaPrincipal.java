@@ -5,6 +5,7 @@
 package tcc;
 
 import java.awt.Scrollbar;
+import java.awt.event.FocusEvent;
 import org.jdesktop.application.Action;
 import org.jdesktop.application.ResourceMap;
 import org.jdesktop.application.SingleFrameApplication;
@@ -48,6 +49,12 @@ public class TelaPrincipal extends FrameView {
         jTextField8.setDocument(new ValidarDados(19));
         jTextField9.setDocument(new ValidarDados(19));
         jTextField10.setDocument(new ValidarDados(19));
+
+        jTextField11.setDocument(new ValidarDados(19));
+        jTextField12.setDocument(new ValidarDados(19));
+        jTextField13.setDocument(new ValidarDados(19));
+        jTextField14.setDocument(new ValidarDados(19));
+        jTextField15.setDocument(new ValidarDados(19));
 
        
 
@@ -181,7 +188,6 @@ public class TelaPrincipal extends FrameView {
         menuBar = new javax.swing.JMenuBar();
         javax.swing.JMenu fileMenu = new javax.swing.JMenu();
         javax.swing.JMenuItem exitMenuItem = new javax.swing.JMenuItem();
-        jMenuItem8 = new javax.swing.JMenuItem();
         javax.swing.JMenu helpMenu = new javax.swing.JMenu();
         javax.swing.JMenuItem aboutMenuItem = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -199,10 +205,11 @@ public class TelaPrincipal extends FrameView {
         statusAnimationLabel = new javax.swing.JLabel();
         progressBar = new javax.swing.JProgressBar();
 
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(tcc.TCCApp.class).getContext().getResourceMap(TelaPrincipal.class);
+        mainPanel.setToolTipText(resourceMap.getString("mainPanel.toolTipText")); // NOI18N
         mainPanel.setName("mainPanel"); // NOI18N
 
         jTextField1.setColumns(3);
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(tcc.TCCApp.class).getContext().getResourceMap(TelaPrincipal.class);
         jTextField1.setText(resourceMap.getString("txt_valor.text")); // NOI18N
         jTextField1.setName("txt_valor"); // NOI18N
         jTextField1.setVerifyInputWhenFocusTarget(false);
@@ -600,7 +607,7 @@ public class TelaPrincipal extends FrameView {
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel25)
                     .addComponent(jLabel27))
-                .addContainerGap(38, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         menuBar.setName("menuBar"); // NOI18N
@@ -612,12 +619,6 @@ public class TelaPrincipal extends FrameView {
         exitMenuItem.setText(resourceMap.getString("exitMenuItem.text")); // NOI18N
         exitMenuItem.setName("exitMenuItem"); // NOI18N
         fileMenu.add(exitMenuItem);
-
-        jMenuItem8.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem8.setText(resourceMap.getString("jMenuItem8.text")); // NOI18N
-        jMenuItem8.setName("jMenuItem8"); // NOI18N
-        fileMenu.add(jMenuItem8);
-        jMenuItem8.getAccessibleContext().setAccessibleDescription(resourceMap.getString("jMenuItem8.AccessibleContext.accessibleDescription")); // NOI18N
 
         menuBar.add(fileMenu);
 
@@ -710,11 +711,11 @@ public class TelaPrincipal extends FrameView {
         setStatusBar(statusPanel);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void limpar(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_limpar
+    private void limpar(FocusEvent evt) {//GEN-FIRST:event_limpar
         this.jLabel28.setText("");
     }//GEN-LAST:event_limpar
 
-    private void limparm(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_limparm
+    private void limparm(FocusEvent evt) {//GEN-FIRST:event_limparm
         this.jLabel23.setText("");
         this.jLabel24.setText("");
         this.jLabel25.setText("");
@@ -829,7 +830,6 @@ public class TelaPrincipal extends FrameView {
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
