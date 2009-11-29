@@ -13,7 +13,7 @@ public class ValidarDados extends PlainDocument{
     private static final long serialVersionUID = -5066124721357390024L;
 
     private int iMaxLength;
-    private String numeros = "1234567890";
+    private String numeros = "-1234567890";
 
     public ValidarDados(int maxlen) {
         super();   
