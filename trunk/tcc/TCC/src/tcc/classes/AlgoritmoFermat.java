@@ -28,7 +28,7 @@ public class AlgoritmoFermat {
         for (int i = x.intValue(); i < (valor+1)/2; i++) {
 
             y = Math.sqrt(Math.pow(i, 2) - valor);
-            System.out.println(i + "             " + y);
+           // System.out.println(i + "             " + y);
 
             if (y == Math.round(y) ) {
                 Integer p = (i + y.intValue());
