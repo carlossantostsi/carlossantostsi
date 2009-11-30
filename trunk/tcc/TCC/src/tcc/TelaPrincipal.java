@@ -41,7 +41,6 @@ public class TelaPrincipal extends FrameView {
         jTextField1.setDocument(new ValidarDados(19));
         jTextField2.setDocument(new ValidarDados(19));
 
-
         jTextField4.setDocument(new ValidarDados(19));
         jTextField5.setDocument(new ValidarDados(19));
         jTextField6.setDocument(new ValidarDados(19));
@@ -626,6 +625,7 @@ public class TelaPrincipal extends FrameView {
         helpMenu.setName("helpMenu"); // NOI18N
 
         aboutMenuItem.setAction(actionMap.get("showAboutBox")); // NOI18N
+        aboutMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_MASK));
         aboutMenuItem.setText(resourceMap.getString("aboutMenuItem.text")); // NOI18N
         aboutMenuItem.setName("aboutMenuItem"); // NOI18N
         helpMenu.add(aboutMenuItem);
