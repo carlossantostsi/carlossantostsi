@@ -4,7 +4,6 @@
 
 package tcc;
 
-import java.awt.Scrollbar;
 import java.awt.event.FocusEvent;
 import org.jdesktop.application.Action;
 import org.jdesktop.application.ResourceMap;
@@ -114,6 +113,7 @@ public class TelaPrincipal extends FrameView {
 
     @Action
     public void showAboutBox() {
+        aboutBox = null ;
         if (aboutBox == null) {
             JFrame mainFrame = TCCApp.getApplication().getMainFrame();
             aboutBox = new TelaWikiModulo(mainFrame);
@@ -121,6 +121,40 @@ public class TelaPrincipal extends FrameView {
         }
         TCCApp.getApplication().show(aboutBox);
     }
+
+    @Action
+    public void showAboutBoxFermat() {
+        aboutBox = null ;
+        if (aboutBox == null) {
+            JFrame mainFrame = TCCApp.getApplication().getMainFrame();
+            aboutBox = new TelaWikiFermat(mainFrame);
+            aboutBox.setLocationRelativeTo(mainFrame);
+        }
+        TCCApp.getApplication().show(aboutBox);
+    }
+
+    @Action
+    public void showAboutBoxEuclides() {
+        aboutBox = null ;
+        if (aboutBox == null) {
+            JFrame mainFrame = TCCApp.getApplication().getMainFrame();
+            aboutBox = new TelaWikiEuclides(mainFrame);
+            aboutBox.setLocationRelativeTo(mainFrame);
+        }
+        TCCApp.getApplication().show(aboutBox);
+    }
+
+    @Action
+    public void showAboutBoxCifra() {
+        aboutBox = null ;
+        if (aboutBox == null) {
+            JFrame mainFrame = TCCApp.getApplication().getMainFrame();
+            aboutBox = new TelaWikiCifra(mainFrame);
+            aboutBox.setLocationRelativeTo(mainFrame);
+        }
+        TCCApp.getApplication().show(aboutBox);
+    }
+
 
     /** This method is called from within the constructor to
      * initialize the form.
@@ -193,10 +227,6 @@ public class TelaPrincipal extends FrameView {
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        jMenu1 = new javax.swing.JMenu();
-        jMenuItem6 = new javax.swing.JMenuItem();
-        jMenuItem7 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         statusPanel = new javax.swing.JPanel();
         javax.swing.JSeparator statusPanelSeparator = new javax.swing.JSeparator();
@@ -625,43 +655,29 @@ public class TelaPrincipal extends FrameView {
         helpMenu.setName("helpMenu"); // NOI18N
 
         aboutMenuItem.setAction(actionMap.get("showAboutBox")); // NOI18N
-        aboutMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_MASK));
         aboutMenuItem.setText(resourceMap.getString("aboutMenuItem.text")); // NOI18N
         aboutMenuItem.setName("aboutMenuItem"); // NOI18N
         helpMenu.add(aboutMenuItem);
 
+        jMenuItem1.setAction(actionMap.get("showAboutBox")); // NOI18N
         jMenuItem1.setText(resourceMap.getString("jMenuItem1.text")); // NOI18N
         jMenuItem1.setName("jMenuItem1"); // NOI18N
         helpMenu.add(jMenuItem1);
 
+        jMenuItem3.setAction(actionMap.get("showAboutBoxFermat")); // NOI18N
         jMenuItem3.setText(resourceMap.getString("jMenuItem3.text")); // NOI18N
         jMenuItem3.setName("jMenuItem3"); // NOI18N
         helpMenu.add(jMenuItem3);
 
+        jMenuItem2.setAction(actionMap.get("showAboutBoxEuclides")); // NOI18N
         jMenuItem2.setText(resourceMap.getString("jMenuItem2.text")); // NOI18N
         jMenuItem2.setName("jMenuItem2"); // NOI18N
         helpMenu.add(jMenuItem2);
 
+        jMenuItem4.setAction(actionMap.get("showAboutBoxCifra")); // NOI18N
         jMenuItem4.setText(resourceMap.getString("jMenuItem4.text")); // NOI18N
         jMenuItem4.setName("jMenuItem4"); // NOI18N
         helpMenu.add(jMenuItem4);
-
-        jMenuItem5.setText(resourceMap.getString("jMenuItem5.text")); // NOI18N
-        jMenuItem5.setName("jMenuItem5"); // NOI18N
-        helpMenu.add(jMenuItem5);
-
-        jMenu1.setText(resourceMap.getString("jMenu1.text")); // NOI18N
-        jMenu1.setName("jMenu1"); // NOI18N
-
-        jMenuItem6.setText(resourceMap.getString("jMenuItem6.text")); // NOI18N
-        jMenuItem6.setName("jMenuItem6"); // NOI18N
-        jMenu1.add(jMenuItem6);
-
-        jMenuItem7.setText(resourceMap.getString("jMenuItem7.text")); // NOI18N
-        jMenuItem7.setName("jMenuItem7"); // NOI18N
-        jMenu1.add(jMenuItem7);
-
-        helpMenu.add(jMenu1);
 
         menuBar.add(helpMenu);
 
@@ -821,15 +837,11 @@ public class TelaPrincipal extends FrameView {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;

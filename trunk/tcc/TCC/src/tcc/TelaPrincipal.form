@@ -670,66 +670,56 @@
             <MenuItem class="javax.swing.JMenuItem" name="aboutMenuItem">
               <Properties>
                 <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
-                  <action class="tcc.TCCView" id="showAboutBox" methodName="showAboutBox"/>
+                  <action class="tcc.TelaPrincipal" id="showAboutBox" methodName="showAboutBox"/>
                 </Property>
                 <Property name="text" type="java.lang.String" resourceKey="aboutMenuItem.text"/>
                 <Property name="name" type="java.lang.String" value="aboutMenuItem" noResource="true"/>
               </Properties>
               <AuxValues>
+                <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="TelaPrincipal_aboutMenuItem"/>
                 <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
               </AuxValues>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
               <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="tcc.TelaPrincipal" id="showAboutBox" methodName="showAboutBox"/>
+                </Property>
                 <Property name="text" type="java.lang.String" resourceKey="jMenuItem1.text"/>
                 <Property name="name" type="java.lang.String" value="jMenuItem1" noResource="true"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="TelaPrincipal_jMenuItem1"/>
+              </AuxValues>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
               <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="tcc.TelaPrincipal" id="showAboutBoxFermat" methodName="showAboutBoxFermat"/>
+                </Property>
                 <Property name="text" type="java.lang.String" resourceKey="jMenuItem3.text"/>
                 <Property name="name" type="java.lang.String" value="jMenuItem3" noResource="true"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
               <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="tcc.TelaPrincipal" id="showAboutBoxEuclides" methodName="showAboutBoxEuclides"/>
+                </Property>
                 <Property name="text" type="java.lang.String" resourceKey="jMenuItem2.text"/>
                 <Property name="name" type="java.lang.String" value="jMenuItem2" noResource="true"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
               <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="tcc.TelaPrincipal" id="showAboutBoxCifra" methodName="showAboutBoxCifra"/>
+                </Property>
                 <Property name="text" type="java.lang.String" resourceKey="jMenuItem4.text"/>
                 <Property name="name" type="java.lang.String" value="jMenuItem4" noResource="true"/>
               </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem5">
-              <Properties>
-                <Property name="text" type="java.lang.String" resourceKey="jMenuItem5.text"/>
-                <Property name="name" type="java.lang.String" value="jMenuItem5" noResource="true"/>
-              </Properties>
-            </MenuItem>
-            <Menu class="javax.swing.JMenu" name="jMenu1">
-              <Properties>
-                <Property name="text" type="java.lang.String" resourceKey="jMenu1.text"/>
-                <Property name="name" type="java.lang.String" value="jMenu1" noResource="true"/>
-              </Properties>
-              <SubComponents>
-                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem6">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" resourceKey="jMenuItem6.text"/>
-                    <Property name="name" type="java.lang.String" value="jMenuItem6" noResource="true"/>
-                  </Properties>
-                </MenuItem>
-                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem7">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" resourceKey="jMenuItem7.text"/>
-                    <Property name="name" type="java.lang.String" value="jMenuItem7" noResource="true"/>
-                  </Properties>
-                </MenuItem>
-              </SubComponents>
-            </Menu>
           </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu2">
