@@ -45,6 +45,7 @@ public class TelaAbout extends javax.swing.JDialog {
         jLabel15 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(tcc.TCCApp.class).getContext().getResourceMap(TelaAbout.class);
@@ -112,11 +113,12 @@ public class TelaAbout extends javax.swing.JDialog {
         jLabel15.setText(resourceMap.getString("jLabel15.text")); // NOI18N
         jLabel15.setName("jLabel15"); // NOI18N
 
-        jLabel7.setText(resourceMap.getString("jLabel7.text")); // NOI18N
         jLabel7.setName("jLabel7"); // NOI18N
 
-        jLabel8.setText(resourceMap.getString("jLabel8.text")); // NOI18N
         jLabel8.setName("jLabel8"); // NOI18N
+
+        jLabel16.setText(resourceMap.getString("jLabel16.text")); // NOI18N
+        jLabel16.setName("jLabel16"); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -132,36 +134,19 @@ public class TelaAbout extends javax.swing.JDialog {
                         .addComponent(jLabel4)))
                 .addGap(287, 287, 287)
                 .addComponent(jLabel2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(13, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(666, Short.MAX_VALUE)
                 .addComponent(closeButton)
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(versionLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
-                .addContainerGap(133, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jLabel5)
                 .addContainerGap(447, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(129, 129, 129)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel11)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel12)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel14))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel15)
-                            .addComponent(jLabel13)
-                            .addComponent(jLabel9))))
-                .addContainerGap(379, Short.MAX_VALUE))
+                .addComponent(jLabel11)
+                .addContainerGap(612, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(54, 54, 54)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 592, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -171,17 +156,35 @@ public class TelaAbout extends javax.swing.JDialog {
                 .addComponent(jLabel1)
                 .addContainerGap(209, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel6)
-                .addContainerGap(635, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
                 .addGap(84, 84, 84)
                 .addComponent(jLabel7)
-                .addContainerGap(100, Short.MAX_VALUE))
+                .addContainerGap(657, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel8)
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addComponent(versionLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel3)))
+                .addContainerGap(133, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(175, 175, 175)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel12)
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel14))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel15)
+                    .addComponent(jLabel13)
+                    .addComponent(jLabel9))
+                .addContainerGap(333, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(59, 59, 59)
+                .addComponent(jLabel16)
+                .addContainerGap(391, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -210,23 +213,27 @@ public class TelaAbout extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel7)
                 .addGap(9, 9, 9)
-                .addComponent(jLabel8)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel9))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel11)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel13))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel14)
-                    .addComponent(jLabel15))
-                .addGap(67, 67, 67)
-                .addComponent(closeButton)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel16))
+                .addGap(24, 24, 24)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel11)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 119, Short.MAX_VALUE)
+                        .addComponent(closeButton))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel10)
+                            .addComponent(jLabel9))
+                        .addGap(12, 12, 12)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel12)
+                            .addComponent(jLabel13))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel14)
+                            .addComponent(jLabel15))))
                 .addContainerGap())
         );
 
@@ -242,6 +249,7 @@ public class TelaAbout extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
